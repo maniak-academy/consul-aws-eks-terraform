@@ -18,5 +18,5 @@ ingressGateways:
     - name: ingress-gateway
       service:
         type: LoadBalancer
-terminatingGateways:
-  enabled: true
+        annotations: |
+          'service.beta.kubernetes.io/aws-load-balancer-internal': "true"
