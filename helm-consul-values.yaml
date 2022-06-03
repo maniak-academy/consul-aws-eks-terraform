@@ -1,0 +1,22 @@
+global:
+  name: consul
+  datacenter: hashidc1
+ui:
+  enabled: true
+  service:
+    type: LoadBalancer
+    annotations: |
+      'service.beta.kubernetes.io/aws-load-balancer-internal': "true"
+connectInject:
+  enabled: true
+  default: true
+controller:
+  enabled: true
+ingressGateways:
+  enabled: true
+  gateways:
+    - name: ingress-gateway
+      service:
+        type: LoadBalancer
+terminatingGateways:
+  enabled: true
