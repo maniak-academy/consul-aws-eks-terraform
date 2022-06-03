@@ -52,4 +52,5 @@ cd consul-aws-eks-terraform
 
 In here, you will find six files used to provision a VPC, security groups, bastion server and an EKS cluster. The final product should be similar to this:
 
-![Tux, the Linux mascot](/images/eks.png)
+![eks](./images/eks.png)
+
